@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Button layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#clear" text="Clear">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <TextField id="range" fx:id="usdRate" layoutX="283.0" layoutY="35.0" prefWidth="103.0" promptText="USD" text="25" />
+    <Label layoutX="284.0" layoutY="15.0" text="Exchange Rates" />
+    <TextField id="range" fx:id="uah" layoutX="132.0" layoutY="140.0" prefHeight="26.0" prefWidth="117.0" promptText="Enter UAH" />
+    <TextField id="range" fx:id="eurRate" layoutX="283.0" layoutY="61.0" prefWidth="103.0" promptText="EUR" text="27" />
+    <TextField id="range" fx:id="result" layoutX="132.0" layoutY="166.0" prefHeight="26.0" prefWidth="117.0" promptText="" />
+    <Button layoutX="132.0" layoutY="200.0" mnemonicParsing="false" onAction="#eurButton" text="EUR">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+    <Button layoutX="194.0" layoutY="200.0" mnemonicParsing="false" onAction="#usdButton" text="USD">
+      <effect>
+        <Reflection />
+      </effect>
+    </Button>
+  </children>
+</AnchorPane>
